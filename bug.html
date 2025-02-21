@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect way to access and modify an element's style
+    document.getElementById("myDiv").style.display = "none"; 
+    //Should have used this instead
+    //document.getElementById("myDiv").style.display = "none";
+  </script>
+</body>
+</html>
